@@ -12,6 +12,8 @@ body{
   background-size: cover;
 
 }
+
+/*edicion de tabla boostrap "tamaño y colores"*/
 .tabla-papa {
   display: flex;
   justify-content: center;
@@ -19,12 +21,12 @@ body{
   
 }
 
+
 .table {
- 
  max-width: 650px;
 }
-#kali{
-  margin: 10px;
+#borde-tabla{
+  margin: 50px;
   border: 5px solid rgb(31, 99, 24);
 
 }
@@ -99,6 +101,7 @@ a{
   word-wrap: break-word;
 }
 
+/* toda la parte de las card de #jugadores*/
 .manue{
   display: flex;
 justify-content:space-around;
@@ -118,10 +121,14 @@ margin-top: 2rem;
   text-align: center;
   box-shadow: 10px 4px 8px rgb(131, 131, 131);
 }
+
+/* para que los textos no queden pegaados al contenido*/
 .txtjugador{
   margin-top: 2rem;
-  
+  text-align: center;
 }
+
+
 /* footer y sus variantes */
 
 footer{
@@ -176,6 +183,7 @@ grid-area: footer-copyright;
  
 }
 
+/*nombre de cada card de jugadores para el responsive*/
 .chu{
   grid-area: chu;
 }
@@ -209,22 +217,52 @@ grid-area: footer-copyright;
 .EzequielSalamon{
   grid-area: EzequielSalamon;
 }
-.fecha-hora {
-  display: flex;
-  flex-direction: column ;
+
+
+/*cosas formulario*/
+main{
+  margin: 1rem;
 }
 
-.papa-form{
-  margin: 10px;
-  border: 10px solid green;
-  width: 800px;
+.abuelo {
   display: flex;
-  flex-direction: column;
   justify-content: center;
- 
-  text-align: center;
+  align-items: center;
 }
 
+.papa-form {
+  margin: 20px;
+  border: 2px solid #026d2f;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px black;
+  width: 80%;
+  width: 600px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  margin-bottom: 15px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.custom-button{
+  background-color: #026d2f !important;
+}
+
+.custom-button:hover {
+  background-color: #0d2c1a !important; 
+}
+
+.form-label{
+  margin-top: 1rem;
+}
 /*query*/
 @media only screen and (max-width:991px)
 {footer
@@ -267,7 +305,7 @@ grid-area: footer-copyright;
     "lucas"
     " chu";
     gap: 10px; /* Ajusta el espacio entre las tarjetas */
-    margin: 20px; /* Ajusta el margen para que se vea mejor */
+    margin: 20px; 
   }
 
   .manu .card {
