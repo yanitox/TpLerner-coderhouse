@@ -217,8 +217,19 @@ grid-area: footer-copyright;
 .EzequielSalamon{
   grid-area: EzequielSalamon;
 }
-
-
+#tr{
+  color: red;
+}
+#ta{
+  color: yellow;
+}
+.stats{
+  display: grid;
+  margin-top: 2rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "a";
+}
 /*cosas formulario*/
 main{
   margin: 1rem;
@@ -229,6 +240,7 @@ main{
   justify-content: center;
   align-items: center;
 }
+
 
 .papa-form {
   margin: 20px;
