@@ -1,0 +1,28 @@
+/*todas las tablas que apareces en la pagina, fixture,  tabla posiciones, prox partidos de la index */
+
+.tabla-papa {
+@extend .redondeo;
+display: flex;
+justify-content: center;
+text-align: center;
+
+&:hover{   
+    transition: 0.5s ease-out;
+    transform: scale(1.1);}
+}
+
+
+.table {
+    max-width: 650px;
+}
+
+#borde-tabla {
+    margin: 50px;
+    border: 5px solid $color-principal;
+}
+
+.tabla-papa-j{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}

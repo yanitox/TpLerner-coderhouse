@@ -1,0 +1,47 @@
+/*todo lo de cards*/
+
+.manu {
+display: flex;
+justify-content: center;
+margin: 10px 0 2rem;
+gap: 2rem;
+
+
+    .card {
+    border-radius: 10px;
+    margin-top: 1.5rem;
+    text-align: center;
+    box-shadow: 10px 4px 8px rgb(131, 131, 131);
+    
+    }
+
+
+}
+
+
+.stats {
+display: grid;
+margin-top: 2rem;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 1fr 1fr;
+grid-template-areas: "a";
+}
+
+
+
+
+
+.chu { grid-area: chu; }
+.lucas { grid-area: lucas; }
+.nel { grid-area: nel; }
+.fede { grid-area: fede; }
+.juli { grid-area: juli; }
+.kevo { grid-area: kevo; }
+.dan { grid-area: dan; }
+.tin { grid-area: tin; }
+.tobo { grid-area: tobo; }
+.yano { grid-area: yano; }
+.EzequielSalamon { grid-area: EzequielSalamon; }
+
+#tr { color: red; }
+#ta { color: yellow; }

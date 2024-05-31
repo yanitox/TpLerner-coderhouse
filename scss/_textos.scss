@@ -1,0 +1,30 @@
+/*toda la edicion de textos ya sea, a, h1, parrafos, etc.*/
+
+h1, h2 {
+
+text-align: center;
+font-size: 2rem !important;
+margin: 1.5rem 0 2rem !important;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h3 {
+font-size: 1.2rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+p {
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 18px;
+}
+
+.txtjugador {
+margin-top: 2rem;
+text-align: center;
+}
+
+a {
+color: $color-secundario !important;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-decoration: none !important;
+font-weight: bold !important;
+}

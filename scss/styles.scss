@@ -1,0 +1,84 @@
+@import 'colores';
+@import 'textos';
+@import 'footer';
+@import 'form';
+@import 'cards';
+@import 'nav';
+@import 'galeria';
+@import 'tabla';
+
+/*ediciones generales como el body que es mismo en todo y las querys*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: $color-fondo;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 991px) {
+  footer {
+    display: grid;
+    text-align: center;
+    gap: 1rem;
+    margin-top: 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(5, 1fr);
+    grid-template-areas:
+      "footer-links footer-info"
+      "footer-social footer-social"
+      "footer-sponsors footer-sponsors"
+      "footer-copyright footer-copyright";
+  }
+
+  .carousel-inner img{
+    width: 120px !important;
+    height: auto;
+  }
+
+  .nav-item {
+    padding: 10px;
+  }
+
+  .footer-sponsors {
+    text-align: center;
+  }
+
+  .footer-social {
+    margin-top: 2rem;
+    
+    
+  }
+
+  .manu {
+    display: grid;
+    grid-template-areas:
+      "EzequielSalamon"
+      "yano"
+      "tobo"
+      "tin"
+      "dan"
+      "kevo"
+      "juli"
+      "fede"
+      "nel"
+      "lucas"
+      "chu";
+    gap: 10px; /* Ajusta el espacio entre las tarjetas */
+    margin: 20px;
+
+    .card {
+      width: auto; /* Ancho automático para adaptarse al grid */
+    }
+
+    .txtjugador {
+      margin-top: 1rem;
+    }
+  }
+}

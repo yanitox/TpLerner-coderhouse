@@ -1,0 +1,45 @@
+/*formulario del formulkario*/
+main {
+margin: 1rem;
+
+.abuelo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.papa-form {
+    margin: 20px;
+    border: 2px solid #026d2f;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px black;
+    width: 600px;
+}
+
+.formulario {
+    input,
+    select,
+    textarea {
+    margin-bottom: 15px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    }
+}
+
+.custom-button {
+    background-color: #026d2f !important;
+
+    &:hover {
+    background-color: #0d2c1a !important;
+    }
+}
+
+.form-label {
+    margin-top: 1rem;
+}
+}
