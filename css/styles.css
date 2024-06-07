@@ -30,6 +30,25 @@ a {
   font-weight: bold !important;
 }
 
+.fito {
+  display: grid;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.tanu {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+span {
+  font-weight: bold;
+}
+
 /*gooter enetero*/
 footer {
   background-color: rgb(31, 99, 24);
@@ -259,6 +278,31 @@ nav ul {
   text-align: center;
 }
 
+.img-tbl {
+  width: 35px;
+  border-radius: 20px;
+}
+
+.tbl-pos {
+  grid-area: tbl-pos;
+  height: 200px;
+}
+
+.tbl-gol {
+  grid-area: tbl-gol;
+}
+
+.tbl-as {
+  grid-area: tbl-asist;
+}
+
+.jefe-tbl {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "tbl-pos tbl-pos" "tbl-gol tbl-asist";
+}
+
 /*ediciones generales como el body que es mismo en todo y las querys*/
 * {
   margin: 0;
@@ -284,8 +328,25 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "footer-links footer-info" "footer-social footer-social" "footer-sponsors footer-sponsors" "footer-copyright footer-copyright";
   }
+  .jefe-tbl {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  .tbl-pos, .tbl-gol, .tbl-as, .tabla-papa-j {
+    width: 90vw;
+  }
+  .tbl-gol, .tbl-asist {
+    margin-top: -5.5rem;
+  }
+  .errr {
+    display: grid;
+  }
+  .redondeo, .tabla-papa {
+    min-width: 80vw;
+  }
   .carousel-inner img {
-    width: 120px !important;
+    width: 200px !important;
     height: auto;
   }
   .nav-item {
@@ -308,6 +369,12 @@ body {
   }
   .manu .txtjugador {
     margin-top: 1rem;
+  }
+  /*cambiar que las tablas sean flexbox como las cards */
+  .jefe-tbl {
+    display: grid;
+    grid-template-columns: 1fr; /* Cambia a una columna en lugar de dos */
+    grid-template-areas: "tbl-pos" "tbl-gol" "tbl-as";
   }
 }
 

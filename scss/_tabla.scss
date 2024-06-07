@@ -1,5 +1,6 @@
 /*todas las tablas que apareces en la pagina, fixture,  tabla posiciones, prox partidos de la index */
 
+
 .tabla-papa {
 @extend .redondeo;
 display: flex;
@@ -26,3 +27,28 @@ text-align: center;
     justify-content: center;
     text-align: center;
 }
+
+    
+.img-tbl{
+    width: 35px;
+    border-radius: 20px;
+}
+
+.tbl-pos{
+    grid-area: tbl-pos;
+    height: 200px;
+}
+.tbl-gol {
+    grid-area: tbl-gol ;
+}
+.tbl-as{
+    grid-area: tbl-asist;
+}
+.jefe-tbl {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "tbl-pos tbl-pos"
+    "tbl-gol tbl-asist";
+  
+  }

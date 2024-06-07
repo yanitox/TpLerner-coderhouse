@@ -28,3 +28,24 @@ font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans
 text-decoration: none !important;
 font-weight: bold !important;
 }
+
+.fito{
+    display: grid;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.tanu {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+
+span{
+    font-weight: bold;
+}
