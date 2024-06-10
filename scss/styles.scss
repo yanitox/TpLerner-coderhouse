@@ -37,6 +37,13 @@ body {
       "footer-sponsors footer-sponsors"
       "footer-copyright footer-copyright";
   }
+  nav{
+    height: auto;
+  }
+  .img-inde{
+    width:100%;
+   height: auto;}
+
   .jefe-tbl{
 display: grid;
 grid-template-columns: 1fr;
@@ -46,6 +53,7 @@ grid-template-rows: 1fr 1fr 1fr;
   .tbl-pos, .tbl-gol, .tbl-as, .tabla-papa-j{
     width: 90vw;
   }
+
   .tbl-gol,.tbl-asist{
     margin-top: -5.5rem;
   }
@@ -53,10 +61,12 @@ grid-template-rows: 1fr 1fr 1fr;
 .errr{
   display: grid;
 }
+
   .redondeo{
     min-width: 80vw;
     
   }
+
   .carousel-inner img{
     width: 200px !important;
     height: auto;
@@ -102,6 +112,7 @@ grid-template-rows: 1fr 1fr 1fr;
     }
   }
    /*cambiar que las tablas sean flexbox como las cards */
+   
   .jefe-tbl {
     display: grid;
     

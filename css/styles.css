@@ -51,7 +51,7 @@ span {
 
 /*gooter enetero*/
 footer {
-  background-color: rgb(31, 99, 24);
+  background-color: rgb(49, 92, 20);
   width: 100%;
   color: #fff;
   padding: 20px;
@@ -220,7 +220,8 @@ main .form-label {
 
 /*el navbar*/
 nav {
-  background-color: rgb(31, 99, 24);
+  background-color: rgb(49, 92, 20);
+  height: 100px;
 }
 nav img {
   margin-top: 2rem;
@@ -236,7 +237,7 @@ nav ul {
 }
 
 /*galeria del carousel del index*/
-.redondeo, .tabla-papa {
+.redondeo, main .abuelo {
   border-radius: 10px;
   box-shadow: 4px 4px 4px rgb(131, 131, 131);
 }
@@ -252,24 +253,19 @@ nav ul {
   margin-top: 1rem;
 }
 
-/*todas las tablas que apareces en la pagina, fixture,  tabla posiciones, prox partidos de la index */
-.tabla-papa {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-}
-.tabla-papa:hover {
-  transition: 0.5s ease-out;
-  transform: scale(1.1);
+.img-inde {
+  width: 100%;
+  height: 70vh;
 }
 
+/*todas las tablas que apareces en la pagina, fixture,  tabla posiciones, prox partidos de la index */
 .table {
   max-width: 650px;
 }
 
 #borde-tabla {
   margin: 50px;
-  border: 5px solid rgb(31, 99, 24);
+  border: 5px solid rgb(49, 92, 20);
 }
 
 .tabla-papa-j {
@@ -328,6 +324,13 @@ body {
     grid-template-rows: repeat(5, 1fr);
     grid-template-areas: "footer-links footer-info" "footer-social footer-social" "footer-sponsors footer-sponsors" "footer-copyright footer-copyright";
   }
+  nav {
+    height: auto;
+  }
+  .img-inde {
+    width: 100%;
+    height: auto;
+  }
   .jefe-tbl {
     display: grid;
     grid-template-columns: 1fr;
@@ -342,7 +345,7 @@ body {
   .errr {
     display: grid;
   }
-  .redondeo, .tabla-papa {
+  .redondeo, main .abuelo {
     min-width: 80vw;
   }
   .carousel-inner img {
